@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up / Login </title>
+    <link rel="stylesheet" href="{% static 'application/css/style.css' %}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'application/css/slide navbar style.css' %}">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">  	
+		
+
+		<video autoplay muted loop id="vdo">
+			<source src="{% static 'application/images/wall03.mp4' %}" type="video/mp4">
+		</video>
+
+		
+
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form action="/signup" method="post">
+					{% csrf_token %}
+					<label for="chk" aria-hidden="true" class="sgn">Sign up</label>
+					<input type="text" name="fname" placeholder="First Name" required="">
+					<input type="text" name="username" placeholder="Create UserName" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="text" name="mobile" placeholder="Contact Number" required="">
+					<input type="password" name="pass1" placeholder="Create Password" required="">
+					<input type="password" name="pass2" placeholder="Confirm Password" required="">
+					<button>Sign up</button>
+				</form>
+			</div>
+
+			<div class="login" >
+				<form action="/login" method="post">
+					{% csrf_token %}
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="text" name="username" placeholder="UserName" required="">
+					<input type="password" name="pass1" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

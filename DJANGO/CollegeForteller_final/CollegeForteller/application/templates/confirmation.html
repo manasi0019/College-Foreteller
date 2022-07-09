@@ -1,0 +1,7 @@
+{% autoescape off %}
+    Welcome to CollegeForeteller.
+    Hello  {{ name.capitalize }}
+    Please confirm your mail by clicking on following link.
+    Thank You.
+    Confirmation Link: http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+{% endautoescape %}

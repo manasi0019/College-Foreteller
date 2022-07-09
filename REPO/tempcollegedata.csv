@@ -1,0 +1,159 @@
+,ID,CollegeName,CourseName,Caste
+0,1," Government College of Engineering & Research, Avasari Khurd",Civil Engineering,GOPENS
+1,2," Government College of Engineering & Research, Avasari Khurd",Civil Engineering,GSCS
+2,5," Government College of Engineering, Karad",Civil Engineering,GOPENS
+3,6," Government College of Engineering, Karad",Civil Engineering,GSCS
+4,9," College of Engineering, Pune",Civil Engineering,GOPENS
+5,10," College of Engineering, Pune",Civil Engineering,GSCS
+6,13," Walchand College of Engineering, Sangli",Civil Engineering,GOPENS
+7,14," Walchand College of Engineering, Sangli",Civil Engineering,GSCS
+8,15," Walchand College of Engineering, Sangli",Computer Science and Engineering,GOPENS
+9,16," Walchand College of Engineering, Sangli",Computer Science and Engineering,GSCS
+10,17," Department of Technology, Shivaji University, Kolhapur",Civil Engineering,GOPENS
+11,18," Department of Technology, Shivaji University, Kolhapur",Civil Engineering,GSCS
+12,21," TSSMS's Pd. Vasantdada Patil Institute of Technology, Bavdhan, Pune",Civil Engineering,GOPENS
+13,22," TSSMS's Pd. Vasantdada Patil Institute of Technology, Bavdhan, Pune",Civil Engineering,GSCS
+14,25," Genba Sopanrao Moze Trust Parvatibai Genba Moze College of Engineering,Wagholi, Pune",Civil Engineering,GOPENS
+15,26," Genba Sopanrao Moze Trust Parvatibai Genba Moze College of Engineering,Wagholi, Pune",Civil Engineering,GSCS
+16,33," Jaywant Shikshan Prasarak Mandal's,Rajarshi Shahu College of Engineering, Tathawade, Pune",Civil Engineering,GOPENS
+17,34," Jaywant Shikshan Prasarak Mandal's,Rajarshi Shahu College of Engineering, Tathawade, Pune",Civil Engineering,GSCS
+18,37," Genba Sopanrao Moze College of Engineering, Baner",Civil Engineering,GOPENS
+19,38," Genba Sopanrao Moze College of Engineering, Baner",Civil Engineering,GSCS
+20,45," MIT Academy of Engineering,Alandi, Pune",Civil Engineering,GOPENS
+21,46," MIT Academy of Engineering,Alandi, Pune",Civil Engineering,GSCS
+22,49," G.H.Raisoni College of Engineering & Management, Wagholi, Pune",Civil Engineering,GOPENS
+23,50," G.H.Raisoni College of Engineering & Management, Wagholi, Pune",Civil Engineering,GSCS
+24,57," JSPM's Imperial College of Engineering and Research, Wagholi, Pune",Civil Engineering,GOPENS
+25,58," JSPM's Imperial College of Engineering and Research, Wagholi, Pune",Civil Engineering,GSCS
+26,61," Pimpri Chinchwad Education Trust, Pimpri Chinchwad College of Engineering, Pune",Civil Engineering,GOPENS
+27,62," Pimpri Chinchwad Education Trust, Pimpri Chinchwad College of Engineering, Pune",Civil Engineering,GSCS
+28,65," G. H.Raisoni Institute of Engineering and Technology, Wagholi, Pune",Civil Engineering,GOPENS
+29,66," G. H.Raisoni Institute of Engineering and Technology, Wagholi, Pune",Civil Engineering,GSCS
+30,69," Sinhgad College of Engineering, Vadgaon (BK), Pune",Civil Engineering,GOPENS
+31,70," Sinhgad College of Engineering, Vadgaon (BK), Pune",Civil Engineering,GSCS
+32,77," Indira College of Engineering & Management, Pune",Civil Engineering,GOPENS
+33,78," Indira College of Engineering & Management, Pune",Civil Engineering,GSCS
+34,81," Sinhgad Technical Education Society, Sinhgad Institute of Technology and Science, Narhe (Ambegaon)",Civil Engineering,GOPENS
+35,82," Sinhgad Technical Education Society, Sinhgad Institute of Technology and Science, Narhe (Ambegaon)",Civil Engineering,GSCS
+36,85," K. J.'s Educational Institut Trinity College of Engineering and Research, Pisoli, Haveli",Civil Engineering,GOPENS
+37,86," K. J.'s Educational Institut Trinity College of Engineering and Research, Pisoli, Haveli",Civil Engineering,GSCS
+38,93," Sinhgad Academy of Engineering, Kondhwa (BK) Kondhwa",Civil Engineering,GOPENS
+39,94," Sinhgad Academy of Engineering, Kondhwa (BK) Kondhwa",Civil Engineering,GSCS
+40,97," Marathwada Mitra Mandal's Institute of Technology, Lohgaon, Pune",Civil Engineering,GOPENS
+41,98," Marathwada Mitra Mandal's Institute of Technology, Lohgaon, Pune",Civil Engineering,GSCS
+42,109," K. E. Society's Rajarambapu Institute of Technology, Walwa, Sangli",Civil Engineering,GOPENS
+43,110," K. E. Society's Rajarambapu Institute of Technology, Walwa, Sangli",Civil Engineering,GSCS
+44,117," Shri Vithal Education and Research Institute's College of Engineering, Pandharpur",Civil Engineering,GOPENS
+45,118," Shri Vithal Education and Research Institute's College of Engineering, Pandharpur",Civil Engineering,GSCS
+46,119," Shri Vithal Education and Research Institute's College of Engineering, Pandharpur",Computer Science and Engineering,GOPENS
+47,120," Shri Vithal Education and Research Institute's College of Engineering, Pandharpur",Computer Science and Engineering,GSCS
+48,121," Dattajirao Kadam Technical Education Society's Textile & Engineering Institute, Ichalkaranji.",Civil Engineering,GOPENS
+49,122," Dattajirao Kadam Technical Education Society's Textile & Engineering Institute, Ichalkaranji.",Civil Engineering,GSCS
+50,123," Dattajirao Kadam Technical Education Society's Textile & Engineering Institute, Ichalkaranji.",Computer Science and Engineering,GOPENS
+51,124," Dattajirao Kadam Technical Education Society's Textile & Engineering Institute, Ichalkaranji.",Computer Science and Engineering,GSCS
+52,125," Pradnya Niketan Education Society's Nagesh Karajagi Orchid College of Engineering & Technology, Solapur",Civil Engineering,GOPENS
+53,126," Pradnya Niketan Education Society's Nagesh Karajagi Orchid College of Engineering & Technology, Solapur",Civil Engineering,GSCS
+54,127," Pradnya Niketan Education Society's Nagesh Karajagi Orchid College of Engineering & Technology, Solapur",Computer Science and Engineering,GOPENS
+55,128," Pradnya Niketan Education Society's Nagesh Karajagi Orchid College of Engineering & Technology, Solapur",Computer Science and Engineering,GSCS
+56,129," D.Y. Patil College of Engineering and Technology, Kolhapur",Civil Engineering,GOPENS
+57,130," D.Y. Patil College of Engineering and Technology, Kolhapur",Civil Engineering,GSCS
+58,131," D.Y. Patil College of Engineering and Technology, Kolhapur",Computer Science and Engineering,GOPENS
+59,132," D.Y. Patil College of Engineering and Technology, Kolhapur",Computer Science and Engineering,GSCS
+60,133," Walchand Institute of Technology, Solapur",Civil Engineering,GOPENS
+61,134," Walchand Institute of Technology, Solapur",Civil Engineering,GSCS
+62,135," Walchand Institute of Technology, Solapur",Computer Science and Engineering,GOPENS
+63,136," Walchand Institute of Technology, Solapur",Computer Science and Engineering,GSCS
+64,137," Kolhapur Institute of Technology's College of Engineering(Autonomous), Kolhapur",Civil Engineering,GOPENS
+65,138," Kolhapur Institute of Technology's College of Engineering(Autonomous), Kolhapur",Civil Engineering,GSCS
+66,139," Kolhapur Institute of Technology's College of Engineering(Autonomous), Kolhapur",Computer Science and Engineering,GOPENS
+67,140," Kolhapur Institute of Technology's College of Engineering(Autonomous), Kolhapur",Computer Science and Engineering,GSCS
+68,141," Tatyasaheb Kore Institute of Engineering and Technology, Warananagar",Civil Engineering,GOPENS
+69,142," Tatyasaheb Kore Institute of Engineering and Technology, Warananagar",Civil Engineering,GSCS
+70,143," Tatyasaheb Kore Institute of Engineering and Technology, Warananagar",Computer Science and Engineering,GOPENS
+71,144," Tatyasaheb Kore Institute of Engineering and Technology, Warananagar",Computer Science and Engineering,GSCS
+72,145," Shetkari Shikshan Mandal's Pad. Vasantraodada Patil Institute of Technology, Budhgaon, Sangli",Civil Engineering,GOPENS
+73,146," Shetkari Shikshan Mandal's Pad. Vasantraodada Patil Institute of Technology, Budhgaon, Sangli",Civil Engineering,GSCS
+74,147," Shetkari Shikshan Mandal's Pad. Vasantraodada Patil Institute of Technology, Budhgaon, Sangli",Computer Science and Engineering,GOPENS
+75,148," Shetkari Shikshan Mandal's Pad. Vasantraodada Patil Institute of Technology, Budhgaon, Sangli",Computer Science and Engineering,GSCS
+76,149," Rayat Shikshan Sanstha's Karmaveer Bhaurao Patil College of Engineering, Satara",Civil Engineering,GOPENS
+77,150," Rayat Shikshan Sanstha's Karmaveer Bhaurao Patil College of Engineering, Satara",Civil Engineering,GSCS
+78,151," Rayat Shikshan Sanstha's Karmaveer Bhaurao Patil College of Engineering, Satara",Computer Science and Engineering,GOPENS
+79,152," Rayat Shikshan Sanstha's Karmaveer Bhaurao Patil College of Engineering, Satara",Computer Science and Engineering,GSCS
+80,157," Dr. D. Y. Patil Pratishthan's D.Y.Patil College of Engineering Akurdi, Pune",Civil Engineering,GOPENS
+81,158," Dr. D. Y. Patil Pratishthan's D.Y.Patil College of Engineering Akurdi, Pune",Civil Engineering,GSCS
+82,169," Shivnagar Vidya Prasarak Mandal's College of Engineering, Malegaon",Civil Engineering,GOPENS
+83,170," Shivnagar Vidya Prasarak Mandal's College of Engineering, Malegaon",Civil Engineering,GSCS
+84,177," Dr. J. J. Magdum Charitable Trust's Dr. J.J. Magdum College of Engineering, Jaysingpur",Civil Engineering,GOPENS
+85,178," Dr. J. J. Magdum Charitable Trust's Dr. J.J. Magdum College of Engineering, Jaysingpur",Civil Engineering,GSCS
+86,181," All India Shri Shivaji Memorial Society's College of Engineering, Pune",Civil Engineering,GOPENS
+87,182," All India Shri Shivaji Memorial Society's College of Engineering, Pune",Civil Engineering,GSCS
+88,193," Annasaheb Dange College of Engineering and Technology, Ashta, Sangli",Civil Engineering,GOPENS
+89,194," Annasaheb Dange College of Engineering and Technology, Ashta, Sangli",Civil Engineering,GSCS
+90,195," Annasaheb Dange College of Engineering and Technology, Ashta, Sangli",Computer Science and Engineering,GOPENS
+91,196," Annasaheb Dange College of Engineering and Technology, Ashta, Sangli",Computer Science and Engineering,GSCS
+92,197," Vidya Pratishthan's Kamalnayan Bajaj Institute of Engineering & Technology, Baramati Dist.Pune",Civil Engineering,GOPENS
+93,198," Vidya Pratishthan's Kamalnayan Bajaj Institute of Engineering & Technology, Baramati Dist.Pune",Civil Engineering,GSCS
+94,205," Bharati Vidyapeeth's College of Engineering, Kolhapur",Civil Engineering,GOPENS
+95,206," Bharati Vidyapeeth's College of Engineering, Kolhapur",Civil Engineering,GSCS
+96,207," Bharati Vidyapeeth's College of Engineering, Kolhapur",Computer Science and Engineering,GOPENS
+97,208," Bharati Vidyapeeth's College of Engineering, Kolhapur",Computer Science and Engineering,GSCS
+98,209," B.R.A.C.T's Vishwakarma Institute of Information Technology, Kondhwa (Bk.), Pune",Civil Engineering,GOPENS
+99,210," B.R.A.C.T's Vishwakarma Institute of Information Technology, Kondhwa (Bk.), Pune",Civil Engineering,GSCS
+100,213," Zeal Education Society's Zeal College of Engineering & Reserch, Narhe, Pune",Civil Engineering,GOPENS
+101,214," Zeal Education Society's Zeal College of Engineering & Reserch, Narhe, Pune",Civil Engineering,GSCS
+102,217," Dr. Ashok Gujar Technical Institute's Dr. Daulatrao Aher College of Engineering, Karad",Civil Engineering,GOPENS
+103,218," Dr. Ashok Gujar Technical Institute's Dr. Daulatrao Aher College of Engineering, Karad",Civil Engineering,GSCS
+104,219," Dr. Ashok Gujar Technical Institute's Dr. Daulatrao Aher College of Engineering, Karad",Computer Science and Engineering,GOPENS
+105,220," Dr. Ashok Gujar Technical Institute's Dr. Daulatrao Aher College of Engineering, Karad",Computer Science and Engineering,GSCS
+106,221," Dhole Patil Education Society, Dhole Patil College of Engineering, Wagholi, Tal. Haveli",Civil Engineering,GOPENS
+107,222," Dhole Patil Education Society, Dhole Patil College of Engineering, Wagholi, Tal. Haveli",Civil Engineering,GSCS
+108,241," Sharad Institute of Technology College of Engineering, Yadrav(Ichalkaranji)",Civil Engineering,GOPENS
+109,242," Sharad Institute of Technology College of Engineering, Yadrav(Ichalkaranji)",Civil Engineering,GSCS
+110,243," Sharad Institute of Technology College of Engineering, Yadrav(Ichalkaranji)",Computer Science and Engineering,GOPENS
+111,244," Sharad Institute of Technology College of Engineering, Yadrav(Ichalkaranji)",Computer Science and Engineering,GSCS
+112,245," K.J.'s Educational Institute's K.J.College of Engineering & Management Research, Pisoli",Civil Engineering,GOPENS
+113,246," K.J.'s Educational Institute's K.J.College of Engineering & Management Research, Pisoli",Civil Engineering,GSCS
+114,255," Nutan College of Engineering and Research, Talegaon Dabhade Tal. Maval, Pune",Computer Science and Engineering,GOPENS
+115,256," Nutan College of Engineering and Research, Talegaon Dabhade Tal. Maval, Pune",Computer Science and Engineering,GSCS
+116,261, Navsahyadri Education Society's Group of Institutions,Civil Engineering,GOPENS
+117,262, Navsahyadri Education Society's Group of Institutions,Civil Engineering,GSCS
+118,265," KJEI's Trinity Academy of Engineering, Yewalewadi, Pune",Civil Engineering,GOPENS
+119,266," KJEI's Trinity Academy of Engineering, Yewalewadi, Pune",Civil Engineering,GSCS
+120,269," N. B. Navale Sinhgad College of Engineering, Kegaon, solapur",Civil Engineering,GOPENS
+121,270," N. B. Navale Sinhgad College of Engineering, Kegaon, solapur",Civil Engineering,GSCS
+122,271," N. B. Navale Sinhgad College of Engineering, Kegaon, solapur",Computer Science and Engineering,GOPENS
+123,272," N. B. Navale Sinhgad College of Engineering, Kegaon, solapur",Computer Science and Engineering,GSCS
+124,273," S K N Sinhgad College of Engineering, Korti Tal. Pandharpur Dist Solapur",Civil Engineering,GOPENS
+125,274," S K N Sinhgad College of Engineering, Korti Tal. Pandharpur Dist Solapur",Civil Engineering,GSCS
+126,275," S K N Sinhgad College of Engineering, Korti Tal. Pandharpur Dist Solapur",Computer Science and Engineering,GOPENS
+127,276," S K N Sinhgad College of Engineering, Korti Tal. Pandharpur Dist Solapur",Computer Science and Engineering,GSCS
+128,277," Shri. Ambabai Talim Sanstha's Sanjay Bhokare Group of Institutes, Miraj",Civil Engineering,GOPENS
+129,278," Shri. Ambabai Talim Sanstha's Sanjay Bhokare Group of Institutes, Miraj",Civil Engineering,GSCS
+130,281," TSSM's Bhivarabai Sawant College of Engineering and Research, Narhe, Pune",Civil Engineering,GOPENS
+131,282," TSSM's Bhivarabai Sawant College of Engineering and Research, Narhe, Pune",Civil Engineering,GSCS
+132,285," Dr. D. Y. Patil School OF Engineering, Lohegaon, Pune",Civil Engineering,GOPENS
+133,286," Dr. D. Y. Patil School OF Engineering, Lohegaon, Pune",Civil Engineering,GSCS
+134,293," JSPM Narhe Technical Campus, Pune.",Civil Engineering,GOPENS
+135,294," JSPM Narhe Technical Campus, Pune.",Civil Engineering,GSCS
+136,313," D.Y.Patil Education Society's,D.Y.Patil Technical Campus, Faculty of Engineering & Faculty of Management,Talsande,Kolhapur.",Civil Engineering,GOPENS
+137,314," D.Y.Patil Education Society's,D.Y.Patil Technical Campus, Faculty of Engineering & Faculty of Management,Talsande,Kolhapur.",Civil Engineering,GSCS
+138,315," D.Y.Patil Education Society's,D.Y.Patil Technical Campus, Faculty of Engineering & Faculty of Management,Talsande,Kolhapur.",Computer Science and Engineering,GOPENS
+139,316," D.Y.Patil Education Society's,D.Y.Patil Technical Campus, Faculty of Engineering & Faculty of Management,Talsande,Kolhapur.",Computer Science and Engineering,GSCS
+140,317," Dr. D. Y. Patil School of Engineering & Technology, Charholi(Bk), Via Lohgaon, Pune",Civil Engineering,GOPENS
+141,318," Dr. D. Y. Patil School of Engineering & Technology, Charholi(Bk), Via Lohgaon, Pune",Civil Engineering,GSCS
+142,325," Bharati Vidyapeeth's College of Engineering,Lavale, Pune",Civil Engineering,GOPENS
+143,326," Bharati Vidyapeeth's College of Engineering,Lavale, Pune",Civil Engineering,GSCS
+144,329," Dr. D.Y.Patil Institute of Engineering, Management & Reseach, Akurdi, Pune",Civil Engineering,GOPENS
+145,330," Dr. D.Y.Patil Institute of Engineering, Management & Reseach, Akurdi, Pune",Civil Engineering,GSCS
+146,333," Pimpri Chinchwad Education Trust's Pimpri Chinchwad College Of Engineering And Research, Ravet",Civil Engineering,GOPENS
+147,334," Pimpri Chinchwad Education Trust's Pimpri Chinchwad College Of Engineering And Research, Ravet",Civil Engineering,GSCS
+148,337," Dr.D.Y.Patil College Of Engineering & Innovation,Talegaon",Civil Engineering,GOPENS
+149,338," Dr.D.Y.Patil College Of Engineering & Innovation,Talegaon",Civil Engineering,GSCS
+150,341," Dr. D Y Patil Pratishthan's College of Engineering, Kolhapur",Civil Engineering,GOPENS
+151,342," Dr. D Y Patil Pratishthan's College of Engineering, Kolhapur",Civil Engineering,GSCS
+152,343," Dr. D Y Patil Pratishthan's College of Engineering, Kolhapur",Computer Science and Engineering,GOPENS
+153,344," Dr. D Y Patil Pratishthan's College of Engineering, Kolhapur",Computer Science and Engineering,GSCS
+154,345," MAEER's MIT College of Railway Engineering and Research, Jamgaon, Barshi",Civil Engineering,GOPENS
+155,346," MAEER's MIT College of Railway Engineering and Research, Jamgaon, Barshi",Civil Engineering,GSCS
+156,347," MAEER's MIT College of Railway Engineering and Research, Jamgaon, Barshi",Computer Science and Engineering,GOPENS
+157,348," MAEER's MIT College of Railway Engineering and Research, Jamgaon, Barshi",Computer Science and Engineering,GSCS

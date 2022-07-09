@@ -1,0 +1,391 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'application/css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'application/css/testing.css' %}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="{% static 'application/css/bootstrap.css' %}">
+    <!-- Bootstrap CSS -->
+    
+
+    <title>CollegeForeteller</title>
+</head>
+    <body>
+
+        {% comment %} <img src="{% static 'application/images/wall2.jpg' %}" id="vdo" alt=""> {% endcomment %}
+        {% comment %} <video autoplay muted loop id="vdo">
+			<source src="{% static 'application/images/wall06.mp4' %}" type="video/mp4">
+		</video> {% endcomment %}
+
+        {% comment %} navbar start {% endcomment %}
+        <nav class="menu fixed-top">
+            <ul class="menu cf">
+                <li><a href="#home"><i class="fa fa-home mr-2 " id="iconstyle" ></i>Home</a></li>
+                <li><a href="#" onclick="openForm()"><i class="fa fa-list-alt mr-2" id="iconstyle"></i>Check List</a></li>
+                <li>
+                    <a href="" ><i class="fa fa-caret-down mr-2" id="iconstyle"></i>About</a>
+                    <ul class="submenu">
+                        <li><a href="#engg">Enginnering</a></li>
+                        <li><a href="#aboutusPage">About Us</a></li>
+                    </ul>
+                </li>
+                <li><a href="#mcktst"><i class="far fa-file-alt mr-2" id="iconstyle"></i>Mock Test</a></li>
+                <li><a href="#contactusPage"><i class="fa fa-address-book mr-2" id="iconstyle"></i>Contact Us</a></li>
+                {% if user.is_authenticated %}
+                <li>
+                    <a href="#sub"><i class="fas fa-user mr-2" id="iconstyle" ></i>{{fname.capitalize}}</a>
+                    <ul class="submenu" id="sub">
+                        <li><a href="/profile"><i class="fas fa-id-badge mr-2" id="iconstyle"></i>Profile</a></li>
+                        <li><a href="/signup"><i class="fas fa-sign-out-alt mr-2" id="iconstyle"> </i>SignOut</a></li>
+                    </ul>
+                </li>
+                {% else %}
+                <li><a href="/signup" ><i class="fas fa-user-plus mr-2" id="iconstyle"></i>SignUp</a></li>
+                <li><a href="/login" ><i class="fas fa-sign-in-alt mr-2" id="iconstyle"></i>Login</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+        {% comment %} navbar end  {% endcomment %}
+
+        {% comment %} {% if user.is_authenticated %}
+                        <span class="mx-3"><strong> {{fname.capitalize}} </strong></span>
+                        <button type="button" class="btn btn-primary"><a href="/signup" style="text-decoration: none; color: white">SignOut</a></button>
+                        {% else %}
+                        <button type="button" class="btn btn-primary mx-3"><a href="/signup" style="text-decoration: none; color: white">SignUp</a></button>
+                        <button type="button" class="btn btn-primary"><a href="/login" style="text-decoration: none; color: white">Login</a></button>
+        {% endif %} {% endcomment %}
+
+
+        <!-- HOME -->
+    <section id="home">
+            <div class="container buttondiv">
+                
+            </div>
+            <div class="form-popup" id="myForm">
+                
+                <form action="/action_page.php" class="form-container">
+                    <center><h1>Check List</h1></center>
+                    {% comment %} <div class="percentile mt-1"> {% endcomment %}
+                        <strong>Marks :</strong>
+                        <input id='percentile' class="form-control"  placeholder="Percentile (in %)" type="number" min="0" max="100" step="any" name="percentile">
+                    {% comment %} </div> {% endcomment %}
+
+                    {% comment %} <div class="rank mt-2"> {% endcomment %}
+                        <strong>Rank :</strong>
+                        <input id='rank' class="form-control"   placeholder="If you have received it" type='number' min="1" mx="10000000" name="rank">
+                    {% comment %} </div> {% endcomment %}
+                    
+                    {% comment %} <div class="homestate mt-2"> {% endcomment %}
+                    <strong>Region :</strong>
+                        <select name="state" class="form-control" >
+                            <option selected value="All India"></option>
+                            <option value="Amravati">Amravati</option>
+                            <option value="Aurangabad">Aurangabad</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Nashik">Nashik</option>
+                            <option value="Pune">Pune</option>
+                        </select>
+                    {% comment %} </div> {% endcomment %}
+
+                    {% comment %} <div class="percentile mt-1"> {% endcomment %}
+                        <strong>CET Physics :</strong>
+                        <input id='cphy' class="form-control"  placeholder="Percentile (in %)" type="number" min="0" max="100" step="any" name="percentile">
+                    {% comment %} </div> {% endcomment %}
+
+                    {% comment %} <div class="percentile mt-1"> {% endcomment %}
+                        <strong>CET Chemistry :</strong>
+                        <input id='cchem' class="form-control"  placeholder="Percentile (in %)" type="number" min="0" max="100" step="any" name="percentile">
+                    {% comment %} </div> {% endcomment %}
+                    
+                    {% comment %} <div class="percentile mt-1"> {% endcomment %}
+                        <strong>CET Mathematics :</strong>
+                        <input id='cmath' class="form-control"  placeholder="Percentile (in %)" type="number" min="0" max="100" step="any" name="percentile">
+                    {% comment %} </div> {% endcomment %}
+                    
+                    {% comment %} <div class="percentile mt-1"> {% endcomment %}
+                        <strong>Total CET Score(PCM) :</strong>
+                        <input id='cmath' class="form-control"  placeholder="Percentile (in %)" type="number" min="0" max="100" step="any" name="percentile">
+                    {% comment %} </div> {% endcomment %}
+
+                    {% comment %} <div class="percentile mt-1"> {% endcomment %}
+                        <strong>HSC Physics :</strong>
+                        <input id='hphy' class="form-control"  placeholder="Percentile (in %)" type="number" min="0" max="100" step="any" name="percentile">
+                    {% comment %} </div> {% endcomment %}
+                    {% comment %} <div class="percentile mt-1"> {% endcomment %}
+                        <strong>HSC Chemistry :</strong>
+                        <input id='hchem' class="form-control"  placeholder="Percentile (in %)" type="number" min="0" max="100" step="any" name="percentile">
+                    {% comment %} </div> {% endcomment %}
+                    {% comment %} <div class="percentile mt-1"> {% endcomment %}
+                        <strong>HSC Mathematics :</strong>
+                        <input id='hmath' class="form-control"  placeholder="Percentile (in %)" type="number" min="0" max="100" step="any" name="percentile">
+                    {% comment %} </div> {% endcomment %}
+                        <strong>Total HSC Score :</strong>
+                        <input id='htot' class="form-control"  placeholder="Percentile (in %)" type="number" min="0" max="100" step="any" name="percentile">
+
+                        <strong>SSC Mathematics :</strong>
+                        <input id='smath' class="form-control"  placeholder="Percentile (in %)" type="number" min="0" max="100" step="any" name="percentile">
+                        <strong>SSC Science :</strong>
+                        <input id='ssci' class="form-control"  placeholder="Percentile (in %)" type="number" min="0" max="100" step="any" name="percentile">
+                        <strong>SSC English :</strong>
+                        <input id='seng' class="form-control"  placeholder="Percentile (in %)" type="number" min="0" max="100" step="any" name="percentile">
+                        <strong>Total SSC Score:</strong>
+                        <input id='stot' class="form-control"  placeholder="Percentile (in %)" type="number" min="0" max="100" step="any" name="percentile">
+                    
+                    
+                        <div class="pwd mt-2">
+                        <div class='radio-container'>
+                            <strong>Pwd : </strong>
+                            <input checked='' id='pwd-Yes'  name='pwd' type='radio' value='YES'>
+                            <label for='pwd-Yes'>Yes</label>
+                            <input checked='' id='pwd-No' name='pwd' type='radio' value='NO'>
+                            <label for='pwd-No'>No</label>
+                        </div>
+                    </div>
+                    
+                    <div class="gender mt-1">
+                        <div class='radio-container'>
+                            <strong>Gender : </strong>
+                            <input checked='' id='gender-female' name='gender' type='radio' value='F'>
+                            <label for='gender-female'>Female</label>
+                            <input id='gender-male' name='gender' type='radio' value='M'>
+                            <label for='gender-male'>Male</label>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="cat">
+                        <div class='radio-container'>
+                            <strong>Category :</strong>
+                            <input checked='' id='category-0-20' name='category' type='radio' value='GEN'>
+                            <label for='category-0-20'>General</label>
+                            <input id='category-20-40' name='category' type='radio' value='SC'>
+                            <label for='category-20-40'>SC</label>
+                            <input id='category-40-60' name='category' type='radio' value='ST'>
+                            <label for='category-40-60'>ST</label>
+                            <input id='category-60-80' name='category' type='radio' value='OBC'>
+                            <label for='category-60-80'>OBC</label>
+                            <input id='category-80-100' name='category' type='radio' value='EWS'>
+                            <label for='category-80-100'>EWS</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn ">Submit</button>
+                    <button type="button" class="btn cancel mx-3" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+
+    </section>
+
+
+    <section class="mock" id="mcktst">
+        <div class="container-fluid">
+            <div class="row fstrow">
+                <div class="col-sm-10">
+                    <div class="crd">
+                        <h2 id="heading">Why Mock Test's are Important !!!</h2>
+                        <p class="para">Any exam preparation is incomplete without practicing the topics you are studying. For getting the best results, you need to test your preparation. Practicing mock tests provides a better perspective of what kind of questions will appear in the exam. They also help in improving the score in main exams.Mock tests are replicated tests based on the annual or competitive exam’s pattern. The main objective behind conducting mock test is to judge the potential of students before writing the actual exam. <span id="dots">...</span><span id="more"> A candidate can analyze his/her performance in the mock and make the necessary changes to avoid the same mistakes in the actual examination. Solving the mocks will help you to get to know how the actual test will be. It will give you an idea about various things like the paper pattern, what kind of questions can be asked, the difficulty level of the questions, and how much time it takes to complete the test.</span></p>
+                        <button onclick="myFunction()" id="myBtn" class="btn btn-primary">Read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row scndrow">
+                <div class="col-sm-12">
+                    <div class="card ml-3">
+                        <div class="content">
+                            <div class="front">
+                                Physics
+                            </div>
+                            <div class="back">
+                                Physics carries 50 marks in MHT-CET exam.<br>
+                                Time(Physics + Chemistry  = 90 min)<br>
+                                <a href="https://testmocks.com/exams/physics-mock-test/" target="_blank">Click Here to start MOCK test</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                Chemistry
+                            </div>
+                            <div class="back">
+                                Chemistry carries 50 marks in MHT-CET exam.<br>
+                                Time(Physics + Chemistry  = 90 min)<br>
+                                <a href="https://testmocks.com/chemistry-mock-test-1/" target="_blank">Click Here to start MOCK test</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                Mathematics
+                            </div>
+                            <div class="back">
+                                Mathematics carries 100 marks in MHT-CET exam.<br>
+                                Time  : 90 min<br>
+                                <a href="https://testmocks.com/mathematics-mock-test-1/" target="_blank">Click Here to start MOCK test</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                Biology
+                            </div>
+                            <div class="back">
+                                Biology carries 100 marks in MHT-CET exam.<br>
+                                Time(Botany + Zoology  = 90 min)<br>
+                                <a href="https://testmocks.com/exams/biology-mock-test/" target="_blank">Click Here to start MOCK test</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                PCMB
+                            </div>
+                            <div class="back">
+                                BackLorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, ullam?<br>
+                                <a href="https://gopract.com/topics/1178/chemistry" target="_blank">Click Here</a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {% comment %} 
+    <div class="card">
+        <div class="content">
+            <div class="front">
+                Front
+            </div>
+            <div class="back">
+                Back!
+            </div>
+        </div>
+    </div> 
+    {% endcomment %}
+
+        {% comment %}   engg  {% endcomment %}
+        
+
+    <section id="aboutusPage">
+        <div class="container-fluid">
+            <div class="row rowone">
+                <div class="col-sm-12 upperInfo">
+                    <div class="aboutTitle">
+                        <center><h2 id="aboutTitle">About Us</h2></center>
+                    </div>
+                    <div class="aboutInfo">
+                        We are CollegeForeteller!!! With the help of College  Foreteller System, candidates will get an idea of colleges in which they can get admission.
+                        Candidates can search and get information about all the colleges they are getting and choose the best one for them. Thus, College  Foreteller System  helps the candidates in making an informed decision.College Forteller System is non-profit platform for all engineering aspiring students. We provide large facilities to students who have completed their HSC and entrance exams like MHTCET and want to pursue engineering
+                    </div>
+                </div>
+            </div>
+            <div class="row rowtwo">
+                <div class="col-sm-12 we">
+                    <div class="card dpimg" style="width: 16rem;">
+                        <center><img src="{% static 'application/images/avatar01.png' %}" class="card-img-top" alt="..."></center>
+                        <div class="card-body">
+                            <center><h4>ROHAN</h4></center>
+                        </div>
+                    </div>
+                    <div class="card dpimg" style="width: 16rem;">
+                        <center><img src="{% static 'application/images/avatar01.png' %}" class="card-img-top" alt="..."></center>
+                        <div class="card-body">
+                            <center><h4>AMRUT</h4></center>
+                        </div>
+                    </div>
+                    <div class="card dpimg" style="width: 16rem;">
+                        <center><img src="{% static 'application/images/avatar02.png' %}" class="card-img-top" alt="..."></center>
+                        <div class="card-body">
+                            <center><h4>MANASI</h4></center>
+                        </div>
+                    </div>
+                    <div class="card dpimg" style="width: 16rem;">
+                        <center><img src="{% static 'application/images/avatar02.png' %}" class="card-img-top" alt="..."></center>
+                        <div class="card-body">
+                            <center><h4>SAKSHI</h4></center>
+                        </div>
+                    </div>
+                    <div class="card dpimg" style="width: 16rem;">
+                        <center><img src="{% static 'application/images/avatar02.png' %}" class="card-img-top" alt="..."></center>
+                        <div class="card-body">
+                            <center><h4>SUSMITA</h4></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactusPage">
+        <div class="container">
+            <div class="anotherDiv">
+                <form class="contactForm">
+                    <center class="contactHeading"><b>Contact Us</b></center>
+                        <input name="name" placeholder="What is your name?" class="ContactName" required />
+                        <input name="emailaddress" placeholder="What is your email?" class="ContactEmail" type="email" required />
+                        <textarea rows="4" cols="50" name="subject" placeholder="Please enter your message" class="passmessage" required></textarea>
+                        <input name="submit" class="contactBtn" type="submit" value="Send" />
+                </form>
+                <div class="socialicons">
+                    <ul class="iconlist">
+                        <li><a href="#"><i class="fas fa-envelope" id="socialiconstyle"></i></a></li>
+                        <li><a href="#" onmouseover="instaBg()"><i class="fab fa-instagram" id="socialiconstyle"></i></a></li>
+                        <li><a href="#" onmouseover="gitBg()"><i class="fab fa-github" id="socialiconstyle"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <a href="#">@ CollegeForeteller</a>
+        </div>
+    </section>
+
+
+
+    
+
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+            } else {
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+            }
+        }
+
+        
+
+    </script>
+    <script src="{% static 'application/js/script.js' %}"></script>
+    <script src="{% static 'application/js/jquery.js' %}"></script>
+    <script src="{% static 'application/js/popper.js' %}"></script>
+    <script src="{% static 'application/js/bootstrap.js' %}"></script>
+    {% comment %} JavaScript END {% endcomment %}
+    </body>
+</html>

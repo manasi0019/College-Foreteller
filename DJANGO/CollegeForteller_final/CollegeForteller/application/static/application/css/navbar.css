@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap");
+
+#home {
+  min-height: 100vh;
+
+  /* position: relative; */
+  /* border: 3px solid green; */
+  background: url("/static/application/images/wall4.jpg");
+  background-size: cover;
+  opacity: 0.95;
+  background-repeat: no-repeat;
+  /* background: red; */
+  /* border: 2px solid green; */
+}
+
+/* .brnd a{
+  color: black;
+  font-family: 'Poppins', sans-serif;
+} */
+
+#vdo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.8;
+  background-size: cover;
+}
+
+#check {
+  min-height: 100vh;
+  background: rgb(251, 249, 236);
+  border: 1px solid rgb(250, 244, 244);
+}
+
+.innerformdesign {
+  margin: 20px;
+}
+.buttondiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+.open-button {
+  color: black;
+  font-weight: 600;
+  padding: 10px;
+  border: 2px solid red;
+  cursor: pointer;
+  margin-top: 300px;
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+#myForm {
+  overflow: scroll;
+  /* overflow: hidden; */
+  height: 500px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  left: 15%;
+  top: 10%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  width: 70%;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 90%;
+  padding-left: 25px;
+  /* padding-right: 25px; */
+  background-color: wheat;
+  display: block;
+  /* height: 500px; */
+  border-radius: 10px;
+  border: 2px solid green;
+}
+
+/* Full-width input fields */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  /* width: 100%; */
+  padding: 20px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+  border-radius: 10px;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  width: 140px;
+  margin-bottom: 10px;
+  /* opacity: 0.8; */
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+/*  MOCK TEXT PAGE START */
+.mock {
+  min-height: 100vh;
+  background: url("/static/application/images/wall3.jpg");
+  background-size: cover;
+  opacity: 1;
+}
+
+.card {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  width: 220px;
+  height: 220px;
+  margin-left: 30px;
+  float: left;
+  perspective: 500px;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.content {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.card:hover {
+  box-shadow: 5px 5px 10px #03446a;
+}
+.card:hover .content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background: white; */
+  background-image: linear-gradient(135deg, #fdeb71 10%, #f8d800 100%);
+  line-height: 300px;
+  font-family: "Supermercado One", cursive;
+  color: #03446a;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back {
+  /* position: absolute; */
+  height: 100%;
+  width: 100%;
+  background: white;
+  /* line-height: 300px; */
+  color: #03446a;
+  /* text-align: center; */
+  font-size: 20px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  padding: 10px;
+}
+
+.front img {
+  height: 20px;
+  width: 160px;
+}
+.back {
+  background: #03446a;
+  color: white;
+  transform: rotateY(180deg);
+}
+.back a {
+  text-decoration: none;
+  color: orange;
+}
+
+.back a:hover {
+  color: red;
+}
+/* .fstrow { */
+/* border: 2px solid red; */
+/* margin-top: 150px; */
+/* height: 100px;
+} */
+
+.scndrow {
+  /* border: 2px solid green; */
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.crd {
+  width: 90%;
+  margin-left: 30px;
+  margin-top: 100px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 20s ease infinite;
+  background-size: 400% 400%;
+  /* border: 2px solid blue; */
+}
+
+#heading {
+  padding: 10px;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+}
+.para {
+  padding-left: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  color: white;
+}
+
+#more {
+  display: none;
+}
+
+#myBtn {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* MOCK TEST PAGE END */
+
+/* CONTACT US PAGE START */
+#contactusPage {
+  min-height: 100vh;
+  /* border: 2px solid red; */
+  background: url("/static/application/images/wall6.jpg");
+  background-size: cover;
+  opacity: 0.95;
+}
+.anotherDiv {
+  border: 0.1px solid transparent;
+}
+.contactHeading {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.contactForm {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 360px;
+  height: 440px;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  /* background: rgba(0, 0, 0, 0.5);  */
+  -moz-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  background: white;
+  /* border: 2px solid green; */
+}
+
+.passmessage {
+  /* background: gray; */
+  width: 276px;
+  height: 110px;
+  /* border: 1px solid rgba(255,255,255,.6); */
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  /* color:#fff; */
+  padding-left: 21px;
+  padding-right: 20px;
+  padding-top: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background: white no-repeat 16px 16px;
+  scroll-behavior: none;
+  border-bottom: 2px solid black;
+}
+.passmessage:hover {
+  border: 2px solid black;
+}
+
+.ContactName,
+.ContactEmail {
+  width: 276px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+
+.ContactName:hover {
+  border: 2px solid black;
+}
+
+.ContactEmail:hover {
+  border: 2px solid black;
+}
+
+.contactBtn {
+  background-image: linear-gradient(
+    to right,
+    #f7971e 0%,
+    #ffd200 51%,
+    #f7971e 100%
+  );
+  width: 60%;
+}
+.contactBtn {
+  margin-top: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.contactBtn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.socialicons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 30px;
+  /* border: 2px solid green; */
+  /* background: white; */
+}
+
+.socialicons ul {
+  padding-top: 5px;
+  list-style: none;
+  /* border: 2px solid red; */
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px;
+}
+
+.socialicons ul li {
+  display: inline;
+  margin: 20px;
+}
+#socialiconstyle {
+  font-size: 28px;
+}
+/* CONTACT US PAGE END */
+
+/* footer */
+.footer {
+  width: 100%;
+  text-align: center;
+  background: #444444;
+  padding: 20px 0;
+  /* border: 2px solid orange; */
+  /* margin-top: 50px; */
+  /* margin-bottom: -100px; */
+  margin-top: 86px;
+  padding: 10px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+/* ABOUT US PAGE DESIGN START */
+#aboutusPage {
+  min-height: 100vh;
+  background: url("/static/application/images/wall8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: gray; */
+}
+#aboutTitle {
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.rowone {
+  /* border: 2px solid red; */
+  height: 280px;
+}
+.upperInfo {
+  /* border: 2px solid green; */
+  margin-top: 60px;
+}
+.aboutInfo {
+  margin-top: 20px;
+  /* border: 2px solid cyan; */
+  padding: 20px;
+  text-align: center;
+  font-size: large;
+  color: white;
+  background-color: #03446a;
+  border-radius: 10px;
+}
+.rowtwo {
+  /* border: 2px solid yellow; */
+  height: 420px;
+  margin-top: 50px;
+}
+.we {
+  /* padding-top: 20px; */
+}
+
+.dpimg {
+  width: 300px;
+  height: 300px;
+}
+
+.dpimg img {
+  width: 100%;
+  height: 220px;
+}
+
+/* ABOUT US PAGE DESIGN END */
+
+#engg {
+  background-image: url("/static/application/images/engg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 5;
+  min-height: 100vh;
+}

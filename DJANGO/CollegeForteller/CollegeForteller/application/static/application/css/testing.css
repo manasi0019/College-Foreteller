@@ -1,0 +1,163 @@
+/* Clearing floats */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu,
+.submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Main level */
+.menu {     
+  margin: 5px auto 50px;
+  width: 900px;
+  line-height: 10px;
+  /* http://www.red-team-design.com/horizontal-centering-using-css-fit-content-value */
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content; 
+}
+
+.menu > li {
+    /* background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );  background-image: radial-gradient(to bottom right #EA8D8D, #A890FE); */
+
+    /* border-left: 2px solid red; */
+    box-shadow: 5px 5px 10px rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7%;
+    float: left;
+    position: relative;
+    transform: skewX(25deg);
+    margin-left: 3px;
+    text-decoration: none;
+    /* background: #34495e; */
+    background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );
+}
+
+.menu a {
+  display: block;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+}   
+
+.menu li:hover {
+    /* background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% ); */
+    border-bottom: 2px solid rgb(71, 144, 240);
+    border-right: 2px solid rgb(71, 144, 240);
+    
+}   
+
+.menu > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+  text-decoration: none;
+}
+.menu > li > a:hover{
+  color: white;
+}
+/* Dropdown */
+.submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%; 
+  margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+
+.submenu li {
+  background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );
+  position: relative;
+  overflow: hidden;   
+}           
+
+.submenu > li > a {
+  padding: 1em 2em;
+  text-decoration: none;     
+}
+.submenu > li > a:hover{
+  color: white;
+}
+.submenu > li::after {
+  content: '';
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;      
+  box-shadow: 0 0 50px rgba(0, 0, 0, .9);     
+}   
+
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+  transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}       
+
+/* Even stuff */
+.submenu > li:nth-child(even){
+  transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+  opacity: 0;
+  visibility: hidden;     
+}
+
+.submenu li {
+  transition: .2s ease transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+}   
+
+.menu > li:hover .submenu li:nth-child(even){
+  transform: skewX(25deg) translateX(15px);     
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+  transform: skewX(-25deg) translateX(-15px);     
+}
+
+#iconstyle{
+  font-size:18px;
+}
+
+

@@ -1,0 +1,17 @@
+
+*** INPUT OF STUDENT CODE ********
+HTML code for Input is in --> project\CollegeForteller\application\templates\application\mainPage.html
+CSS code --> project\CollegeForteller\application\static\application\css\navbar.css
+
+
+
+*** LOGIN AND SIGNUP PAGE CODE *****
+HTML CODE FOR LOGIN AND SIGNUP --> project\CollegeForteller\application\templates\application\login.html
+CSS code -->  project\CollegeForteller\application\static\application\css\style.css
+
+
+*** BUSINESS LOGIC ***
+project\CollegeForteller\application\views.py
+
+*** routes *** 
+project\CollegeForteller\application\urls.py

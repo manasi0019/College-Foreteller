@@ -1,0 +1,27 @@
+/* collegeList */
+.SG {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.SG .sgLi {
+  min-width: 24%;
+  margin: 2% 0.35%;
+  display: inline-flex;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.SG .sgLi:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.ser {
+  counter-reset: serial-number;
+  padding: 20px;  /* Set the serial number counter to 0 */
+}
+
+.ser td:first-child:before {
+  counter-increment: serial-number;  /* Increment the serial number counter */
+  content: counter(serial-number);  /* Display the counter */
+}
